@@ -32,28 +32,24 @@ cd job-recommendation-service
 ```
 ### 2. Install Dependencies
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 ### 3. Initialize the Database
 Run the script to set up the database:
 
 ```bash
-Copy code
 python init_db.py
 ```
 ### 4. Populate the Database
 Add the job postings to the database:
 
 ```bash
-Copy code
 python populate_job_postings.py
 ```
 ### 5. Start the API Server
 Run the server using:
 
 ```bash
-Copy code
 python app.py
 ```
 The API will now be running at http://127.0.0.1:5000/.
@@ -67,7 +63,6 @@ Method: POST
 Request Body (Example):
 
 json
-Copy code
 {
   "name": "John Doe",
   "skills": ["Python", "Django", "REST APIs"],
@@ -81,7 +76,6 @@ Copy code
 Response (Example):
 
 json
-Copy code
 [
   {
     "job_title": "Backend Developer",
